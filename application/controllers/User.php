@@ -123,7 +123,7 @@ class User extends CI_Controller {
     		'consumer_secret' => $this->get_api_secret_key()
 		);
 		$url = 'https://api.twitter.com/1.1/search/tweets.json';
-		$getfield = '?q=' . $keyword . '&count=100';
+		$getfield = '?q=' . $keyword . '&count=5';
 		if ($sinceID != "0") {
 			$getfield .= '&since_id=' . $sinceID;
 		}
